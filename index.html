@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium YouTube Growth Agency</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <nav class="glass-nav">
+        <div class="logo" data-i18n="logo">ElevateYT</div>
+        <div class="lang-switch">
+            <i class="fa-solid fa-globe"></i>
+            <select id="lang-selector">
+                <option value="en">English 🇺🇸</option>
+                <option value="ko">한국어 🇰🇷</option>
+                <option value="zh">中文 🇨🇳</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="glow-text" data-i18n="hero_title">Turn One Video Into a Winning Video</h1>
+            <p class="subtitle" data-i18n="hero_subtitle">Reach the right audience, grow visibility, and improve your channel with smart expert support.</p>
+            <div class="cta-buttons">
+                <a href="https://t.me/Ytboosting58" target="_blank" class="btn btn-primary pulse-btn">
+                    <i class="fa-brands fa-telegram"></i> <span data-i18n="cta_telegram">Contact on Telegram</span>
+                </a>
+                <a href="#story" class="btn btn-secondary" data-i18n="cta_works">See How It Works</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Scroll Story Section -->
+    <section class="story-section" id="story">
+        <div class="sticky-container">
+            <!-- Scene 1, 2, 3: Ranking Race -->
+            <div class="scene race-board active" id="scene-race">
+                <h2 class="scene-title glow-text" data-i18n="race_title">The Race to the Top</h2>
+                <div class="rankings">
+                    <div class="rank-item first" id="rank-1">
+                        <span class="rank-num">#1</span>
+                        <div class="video-bar other-bar"></div>
+                    </div>
+                    <div class="rank-item second" id="rank-2">
+                        <span class="rank-num">#2</span>
+                        <div class="video-bar other-bar"></div>
+                    </div>
+                    <div class="rank-item third" id="rank-3">
+                        <span class="rank-num">#3</span>
+                        <div class="video-bar your-bar">
+                            <span data-i18n="your_video">Your Video</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene-overlay-text hidden" id="race-success-text">
+                    <h2 class="glow-gold" data-i18n="race_success">Your video can rise with the right strategy</h2>
+                </div>
+            </div>
+
+            <!-- Scene 4: Dashboard -->
+            <div class="scene dashboard hidden" id="scene-dashboard">
+                <div class="glass-panel">
+                    <h2 class="glow-text" data-i18n="dash_title">Watch Your Growth</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fa-solid fa-eye"></i>
+                            <h3 data-i18n="stat_views">Views</h3>
+                            <div class="stat-value" id="count-views">0</div>
+                            <div class="trend up"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fa-solid fa-users"></i>
+                            <h3 data-i18n="stat_reach">Reach</h3>
+                            <div class="stat-value" id="count-reach">0</div>
+                            <div class="trend up"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <h3 data-i18n="stat_quality">Audience Quality</h3>
+                            <div class="stat-bar"><div class="fill" style="width: 0%" id="bar-quality"></div></div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fa-solid fa-hand-pointer"></i>
+                            <h3 data-i18n="stat_ctr">Click Rate</h3>
+                            <div class="stat-bar"><div class="fill" style="width: 0%" id="bar-ctr"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scene 5: Long-Term Support -->
+            <div class="scene support hidden" id="scene-support">
+                <h1 class="mega-text glow-blue" data-i18n="support_text">Long-Term Support After Every Project</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="section-title glow-text" data-i18n="services_title">Premium Services</h2>
+        <div class="cards-grid">
+            <div class="service-card">
+                <div class="icon-glow"><i class="fa-brands fa-youtube"></i></div>
+                <h3 data-i18n="srv_1_title">YouTube Video Promotion</h3>
+                <p data-i18n="srv_1_desc">High-end promotional strategies tailored for your specific niche.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-glow"><i class="fa-solid fa-rocket"></i></div>
+                <h3 data-i18n="srv_2_title">Better Visibility</h3>
+                <p data-i18n="srv_2_desc">Boost your search rankings and suggested video appearances.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-glow"><i class="fa-solid fa-users-viewfinder"></i></div>
+                <h3 data-i18n="srv_3_title">Reach Right Audience</h3>
+                <p data-i18n="srv_3_desc">Target viewers who actually care about your content.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-glow"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <h3 data-i18n="srv_4_title">SEO & Keyword Help</h3>
+                <p data-i18n="srv_4_desc">Optimize your metadata for maximum algorithmic push.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-glow"><i class="fa-solid fa-layer-group"></i></div>
+                <h3 data-i18n="srv_5_title">Multi Video Campaigns</h3>
+                <p data-i18n="srv_5_desc">Scale your channel through orchestrated multi-video pushes.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-glow"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 data-i18n="srv_6_title">Channel Growth Guidance</h3>
+                <p data-i18n="srv_6_desc">Expert advice on content strategy and channel direction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="trust-cards">
+            <div class="trust-card">
+                <div class="t-icon"><i class="fa-solid fa-infinity"></i></div>
+                <h3 data-i18n="trust_1_title">One Video = Lifetime Support</h3>
+                <p data-i18n="trust_1_desc">If client works on one video, support remains anytime.</p>
+            </div>
+            <div class="trust-card">
+                <div class="t-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3 data-i18n="trust_2_title">Ask Anything Anytime</h3>
+                <p data-i18n="trust_2_desc">Need help with titles, channel issues, strategy, doubts? We are here.</p>
+            </div>
+            <div class="trust-card">
+                <div class="t-icon"><i class="fa-solid fa-gem"></i></div>
+                <h3 data-i18n="trust_3_title">Bigger Orders = Better Offers</h3>
+                <p data-i18n="trust_3_desc">5+ videos get discounts and VIP support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="offer-section">
+        <div class="offer-banner glow-red">
+            <div class="offer-content">
+                <h2 data-i18n="offer_title">20% OFF LIMITED TIME</h2>
+                <div class="countdown">
+                    <div class="time-box"><span id="hours">12</span><small data-i18n="time_hrs">Hours</small></div>
+                    <div class="time-box"><span id="minutes">45</span><small data-i18n="time_min">Mins</small></div>
+                    <div class="time-box"><span id="seconds">30</span><small data-i18n="time_sec">Secs</small></div>
+                </div>
+                <a href="https://t.me/Ytboosting58" target="_blank" class="btn btn-red pulse-btn">
+                    <i class="fa-brands fa-telegram"></i> <span data-i18n="cta_claim">Claim Offer Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="f-contact">
+                <i class="fa-brands fa-telegram"></i> Telegram: <a href="https://t.me/Ytboosting58" target="_blank">@Ytboosting58</a>
+            </div>
+            <div class="f-support" data-i18n="footer_support">24/7 Support</div>
+            <div class="f-langs">English | 한국어 | 中文</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
